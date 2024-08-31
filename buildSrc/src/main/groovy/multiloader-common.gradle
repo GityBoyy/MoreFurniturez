@@ -42,6 +42,15 @@ repositories {
         name = 'BlameJared'
         url = 'https://maven.blamejared.com'
     }
+    maven {
+        name = "MrCrayfish (GitHub)"
+        url = "https://maven.pkg.github.com/MrCrayfish/Maven"
+        credentials {
+            // For your security, retrieve these from a non-public file or environment variable
+            username = "GityBoyy"
+                    password = "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"
+        }
+    }
 }
 
 // Declare capabilities on the outgoing configurations.

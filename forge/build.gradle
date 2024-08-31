@@ -69,6 +69,13 @@ sourceSets.main.resources.srcDir 'src/generated/resources'
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     annotationProcessor("org.spongepowered:mixin:0.8.5-SNAPSHOT:processor")
+    implementation "com.mrcrayfish:framework-forge:${minecraft_version}-${framework_version}"
+    implementation "com.mrcrayfish:refurbished_furniture-forge:${minecraft_version}-${refurbished_furniture_version}"
+
+    //compileOnly fg.deobf("maven.modrinth:farmers-delight:${minecraft_version}-${catalogue_version}")
+
+    compileOnly "mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"
+    runtimeOnly "mezz.jei:jei-${minecraft_version}-forge:${jei_version}"
 
     // Forge's hack fix
     implementation('net.sf.jopt-simple:jopt-simple:5.0.4') { version { strictly '5.0.4' } }
